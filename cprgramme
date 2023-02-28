@@ -4,8 +4,6 @@ pipeline {
         stage('build') {
             steps{
                  sh 'gcc -o fact.c'
-                 sh 'gcc -o rev.c'
-                 sh 'gcc -o odd.c'
                  sh 'sleep 5'
             }
         }
