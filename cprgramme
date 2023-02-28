@@ -1,10 +1,9 @@
 pipeline {
-    agent any 
+    agent {label 'linux'}
     stages{
-        stage('build') {
-          agent { make ./ABC.exe}
+        stage('c-programme') {
             steps{
-                 sh 'gcc -o fact.c'
+                 sh ' /home/ec2-user/make/fact.sh'
                  sh 'sleep 5'
             }
         }
