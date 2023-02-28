@@ -2,6 +2,7 @@ pipeline {
     agent any 
     stages{
         stage('build') {
+          agent { make ABC.exe}
             steps{
                  sh 'gcc -o fact.c'
                  sh 'sleep 5'
