@@ -5,7 +5,7 @@ pipeline {
             steps{
                  sh '''
                     sleep 5
-                     ./ABC.exe fact.c
+                     fact.c
                 '''
             }
         }
