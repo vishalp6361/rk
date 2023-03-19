@@ -8,5 +8,3 @@ odd.o:odd.c
 	gcc -c odd.c
 even.o:even.c
 	gcc -c even.c
-~
-
